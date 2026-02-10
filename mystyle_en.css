@@ -1,0 +1,73 @@
+/* Overall vertical writing style */
+tei-tei {
+  writing-mode: vertical-rl; /* Vertical writing: right to left */
+  text-orientation: upright; /* Display characters upright */
+  font-family: "Noto Serif JP", serif; /* Modern Japanese font */
+  line-height: 2; /* Set generous line spacing */
+  letter-spacing: 0.1em; /* Slightly increase letter spacing */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background */
+  border: 1px solid #ddd; /* Soft border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Style for each stanza of the poem */
+tei-lg {
+  margin-right: 2em; /* Add spacing between stanzas */
+  margin-left: 2em;
+}
+
+/* Style for each line of the poem */
+tei-l {
+  font-size: 1.2em; /* Slightly larger font size */
+  color: #333; /* Dark gray text color */
+  transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+}
+
+/* Animated hover effect */
+tei-l:hover {
+  color: #007acc; /* Change to blue on hover */
+}
+
+/* Title section */
+tei-head {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.5em; /* Larger title font size */
+  font-weight: bold;
+  color: #007acc; /* Modern blue color */
+  margin-top: 20px;
+  margin-left: 1.2em;
+  text-align: left;
+}
+
+/* Section-specific titles */
+tei-title {
+  font-size: 1.3em;
+  color: #555;
+  font-style: bold;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* Paragraph <p> */
+tei-p {
+  font-size: 1.5em;
+  color: #3b413e;
+  margin-left: 1em;
+}
+
+/* Add soft animation to the whole content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+tei-tei {
+  animation: fadeIn 1s ease-in-out;
+}
