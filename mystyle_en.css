@@ -1,62 +1,82 @@
-/* Overall vertical writing style */
+/* Overall horizontal writing style (English) */
 tei-tei {
-  writing-mode: vertical-rl; /* Vertical writing: right to left */
-  text-orientation: upright; /* Display characters upright */
-  font-family: "Noto Serif JP", serif; /* Modern Japanese font */
-  line-height: 2; /* Set generous line spacing */
-  letter-spacing: 0.1em; /* Slightly increase letter spacing */
+  writing-mode: horizontal-tb;
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
   margin: 20px;
-  padding: 20px;
-  background-color: #f4f4f4; /* Light gray background */
-  border: 1px solid #ddd; /* Soft border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 2em 2.5em;
+  max-width: 42em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
 /* Style for each stanza of the poem */
 tei-lg {
-  margin-right: 2em; /* Add spacing between stanzas */
-  margin-left: 2em;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
 }
 
-/* Style for each line of the poem */
+tei-lg:first-of-type {
+  margin-top: 0;
+}
+
+/* Style for each line of the poem (override CETEIcean's width: 2em so lines don't break per word) */
 tei-l {
-  font-size: 1.2em; /* Slightly larger font size */
-  color: #333; /* Dark gray text color */
-  transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+  display: block;
+  width: 100%;
+  max-width: none;
+  font-size: 1.15em;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+  padding-left: 0.5em;
 }
 
-/* Animated hover effect */
+/* Hover effect */
 tei-l:hover {
-  color: #007acc; /* Change to blue on hover */
+  color: #007acc;
 }
 
 /* Title section */
 tei-head {
-  font-family: "Noto Serif JP", serif;
-  font-size: 1.5em; /* Larger title font size */
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  font-size: 1.5em;
   font-weight: bold;
-  color: #007acc; /* Modern blue color */
-  margin-top: 20px;
-  margin-left: 1.2em;
+  color: #007acc;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
   text-align: left;
 }
 
-/* Section-specific titles */
+tei-head:first-child {
+  margin-top: 0;
+}
+
+/* Section-specific titles (in head: display on new line, e.g. "Chapter 1" then "Morning Light") */
+tei-head tei-title {
+  display: block;
+  margin-top: 0.25em;
+}
 tei-title {
-  font-size: 1.3em;
+  font-size: 1.25em;
   color: #555;
-  font-style: bold;
-  font-family: "Noto Serif JP", serif;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
 }
 
 /* Paragraph <p> */
 tei-p {
-  font-size: 1.5em;
+  font-size: 1.05em;
   color: #3b413e;
-  margin-left: 1em;
+  margin: 0.75em 0 0.75em 0.5em;
+  line-height: 1.7;
 }
 
-/* Add soft animation to the whole content */
+/* Soft animation for the whole content */
 @keyframes fadeIn {
   from {
     opacity: 0;
