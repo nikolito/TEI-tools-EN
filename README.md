@@ -25,4 +25,4 @@ FY2025 Educational Program Development Project
 Developing a Research Data Ecosystem for the Promotion of Data-Driven Science
 
 Project page:  
-[https://www.gjs.osaka-u.ac.jp/project/2023a/](https://www.library.osaka-u.ac.jp/pr/r_and_d_unit/2025/)
+[https://www.library.osaka-u.ac.jp/pr/r_and_d_unit/2025/](https://www.library.osaka-u.ac.jp/pr/r_and_d_unit/2025/)
