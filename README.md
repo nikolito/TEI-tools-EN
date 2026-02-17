@@ -17,12 +17,12 @@ The version included in this repository has been modified by adjusting tags and 
 
 ## Data Provider
 
-**Global Japanese Studies Education and Research Center, Osaka University**
+**The University of Osaka Library**
 
-FY2023 Educational Program Development Project
+FY2025 Educational Program Development Project
 
 **Project Title**  
-Development of Digital Humanities Learning Materials to Promote Research Data Management in the Humanities
+Developing a Research Data Ecosystem for the Promotion of Data-Driven Science
 
 Project page:  
-https://www.gjs.osaka-u.ac.jp/project/2023a/
+[https://www.gjs.osaka-u.ac.jp/project/2023a/](https://www.library.osaka-u.ac.jp/pr/r_and_d_unit/2025/)
